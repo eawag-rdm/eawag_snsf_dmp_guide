@@ -1197,7 +1197,7 @@ for example include:
 * The need to keep patentable information secret until patent protection applies.
 
 Possible reasons for delayed publication, which are **currently not
-accepted** by SNSF include for example:
+accepted** by SNSF, include for example:
 
 * The intent to synchronize the publication of the data with other
   publications (e.g. project report, paper, press release) to
