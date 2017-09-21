@@ -1190,14 +1190,14 @@ Instructions
     actually materializes at the end of the project, describe the
     issue in the final DMP, and hope that the SNSF will accept that.
 
-Possible reasons for delayed publication (acknowledged by SNSF) could
+Possible reasons for delayed publication (accepted by SNSF) could
 for example include:
 
 * The time necessary to anonymize personal data.
 * The need to keep patentable information secret until patent protection applies.
 
-Possible reasons for delayed publication, which are currently **not
-accepted** by SNSF) could for example include:
+Possible reasons for delayed publication, which are **currently not
+accepted** by SNSF include for example:
 
 * The intent to synchronize the publication of the data with other
   publications (e.g. project report, paper, press release) to
