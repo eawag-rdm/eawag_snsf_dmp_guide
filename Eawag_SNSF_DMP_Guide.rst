@@ -333,7 +333,7 @@ Conceptualize two types of metadata: **1. Scientific metadata** and
 Scientific metadata provides all necessary information to correctly
 understand, interpret, assess, replicate (within limits), build upon,
 and generally use your data. This metadata might be compiled
-"free-form" into a single README-file that accompanies the
+"free-form" into one or several README-file(s) that accompany the
 data.
 
 Certain fields have formally defined established metadata standards,
@@ -365,6 +365,18 @@ This metadata could contain for example:
 * Suggestions for how to best reuse the data.
 * Any information suited to decrease the chances that a future user of
   the data needs to contact you with questions.
+
+**Describe, as detailed as possible, what will comprise the scientific
+metadata.**  Make sure to mention all information, or information
+categories, that a future user of your data will need to read and
+interpret the data.
+
+**Describe how this metadata will be managed,** i.e. who or what will
+generate it when, in what form it is stored in which location, and how
+it is associated with the respective experiment, measurement, or
+observation. Describe technical aspects of the metadata management,
+e.g. the use of database software, and the protocol or mechanism to
+handle updates and version control, if applicable.
 
 .. rubric:: 2. General metadata
 
