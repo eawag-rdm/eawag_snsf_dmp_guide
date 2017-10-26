@@ -1331,7 +1331,8 @@ Some hints
 Appendix B: Related material
 ============================
 
-:download:`Data Quality Control and Assurance Tutorial <./_static/L05_DataQualityControlAssurance.pdf>`
+* :download:`Data Quality Control and Assurance Tutorial (PDF)<./_static/L05_DataQualityControlAssurance.pdf>`
+* `DLCM Template for the SNSF DMP (PDF) <https://www.dlcm.ch/download_file/force/77/275>`_ 
 
 
 References
