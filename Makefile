@@ -2,7 +2,7 @@
 #
 
 # You can set these variables from the command line.
-SPHINXOPTS    = -a
+SPHINXOPTS    = -a -E
 SPHINXBUILD   = python -msphinx
 SPHINXPROJ    = Eawag_SNSF_DMP_Guide
 SOURCEDIR     = .

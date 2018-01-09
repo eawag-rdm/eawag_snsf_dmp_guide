@@ -1,127 +1,126 @@
-{% extends "!layout.html" %}
+{#
+    cloud/layout.html
+    ~~~~~~~~~~~~~~~~~
 
-{% set show_sphinx = False %}
+    Sphinx layout template for the cloud theme.
 
-{# {% if theme_bootstrap_version == "3" %} #}
-{#   {% set bootstrap_version, navbar_version = "3.3.7", "" %} #}
-{#   {% set bs_span_prefix = "col-md-" %} #}
-{# {% else %} #}
-{#   {% set bootstrap_version, navbar_version = "2.3.2", "-2" %} #}
-{#   {% set bs_span_prefix = "span" %} #}
-{# {% endif %} #}
+    :copyright: Copyright 2009-2011 Assurance Technologies LLC
+    :license: BSD
 
-{# {% set script_files = script_files + [ #}
-{#     '_static/js/jquery-1.11.0.min.js', #}
-{#     '_static/js/jquery-fix.js', #}
-{#     '_static/bootstrap-' + bootstrap_version + '/js/bootstrap.min.js', #}
-{#     '_static/bootstrap-sphinx.js' #}
-{#   ] #}
-{# %} #}
+    roottarget - optional target for root link (default to toc)
+    logotarget - optional target for logo link (defaults to root target)
+    googleanalytics_id - if set, enabled google analytics snippet & footer
+    googleanalytics_path - optional subpatch for GA cookie
 
-{# {%- set render_sidebar = (not embedded) and (not theme_nosidebar|tobool) and sidebars %} #\} #}
+#}
 
-{# {%- set bs_content_width = render_sidebar and "9" or "12"%} #}
+{# Modified for Eawag by Harald von Waldow <harald.vonwaldow@eawag.ch #}
 
-{# {%- block doctype -%} #}
-{# <!DOCTYPE html> #}
-{# {%- endblock %} #}
+{% extends "basic/layout.html" %}
 
-{# Sidebar: Rework into our Bootstrap nav section. #}
-{# {% macro navBar() %} #}
-{# {% include "navbar" + navbar_version + ".html" %} #}
-{# {% endmacro %} #}
+{% set reldelim2 = reldim2 is not defined and ' &nbsp; &nbsp;' or reldelim2 %}
 
+{# add script file to instrument collapsable sections  and other features #}
+{% set script_files = script_files + ['_static/jquery.cookie.js',
+                                      '_static/cloud.base.js',
+                                      '_static/cloud.js'] %}
 
-{# {% if theme_bootstrap_version == "3" %} #}
-{#   {%- macro bsidebar() %} #}
-{#       {%- if render_sidebar %} #}
-{#       <div class="{{ bs_span_prefix }}3"> #}
-{#         <div id="sidebar" class="bs-sidenav" role="complementary"> #}
-{#           {%- for sidebartemplate in sidebars %} #}
-{#             {%- include sidebartemplate %} #}
-{#           {%- endfor %} #}
-{#         </div> #}
-{#       </div> #}
-{#       {%- endif %} #}
-{#   {%- endmacro %} #}
-{# {% else %} #}
-{#   {%- macro bsidebar() %} #}
-{#       {%- if render_sidebar %} #}
-{#       <div class="{{ bs_span_prefix }}3"> #}
-{#         <div id="sidebar" class="bs-sidenav well" data-spy="affix"> #}
-{#           {%- for sidebartemplate in sidebars %} #}
-{#             {%- include sidebartemplate %} #}
-{#           {%- endfor %} #}
-{#         </div> #}
-{#       </div> #}
-{#       {%- endif %} #}
-{#   {%- endmacro %} #}
-{# {% endif %} #}
+{# add font stylesheets #}
+{% set css_files = css_files + [theme_fontcssurl] %}
 
-{# {%- block extrahead %} #}
-{# <meta charset='utf-8'> #}
-{# <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'> #}
-{# <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'> #}
-{# <meta name="apple-mobile-web-app-capable" content="yes"> #}
-{# {% endblock %} #}
+{# make root link redirectable #}
+{%- set theme_roottarget = (theme_roottarget == "<toc>" and master_doc or theme_roottarget) %}
+{% block rootrellink %}
+    <li><a href="{{ pathto(theme_roottarget) }}">{{shorttitle|e}}</a>{{reldelim1}}</li>
+{% endblock %}
 
-{# Silence the sidebar's, relbar's #}
-{# {% block header %}{% endblock %} #}
-{# {% block relbar1 %}{% endblock %} #}
-{# {% block relbar2 %}{% endblock %} #}
-{# {% block sidebarsourcelink %}{% endblock %} #}
-
-{# {%- block content %} #}
-{# {{ navBar() }} #}
-{# <div class="container"> #}
-{#   <div class="row"> #}
-{#     {%- block sidebar1 %}{{ bsidebar() }}{% endblock %} #}
-{#     <div class="{{ bs_span_prefix }}{{ bs_content_width }} content"> #}
-{#       {% block body %}{% endblock %} #}
-{#     </div> #}
-{#     {% block sidebar2 %} {\# possible location for sidebar #\} {% endblock %} #}
-{#   </div> #}
-{# </div> #}
-{# {%- endblock %} #}
-
-{%- block footer %}
-<footer class="footer">
-  <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      {% if theme_source_link_position == "footer" %}
-        <br/>
-        {% include "sourcelink.html" %}
-      {% endif %}
-    </p>
-    <p>
-    {%- if show_copyright %}
-      {%- if hasdoc('copyright') %}
-        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}<br/>
-      {%- else %}
-	<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
-	  <a rel="license"
-	     href="http://creativecommons.org/publicdomain/zero/1.0/">
-	     <img src="_static/zero.png" style="border-style: none;" alt="CC0" />
-	  </a>
-	  <br />
-	  To the extent possible under law,
-	  <a rel="dct:publisher"
-	     href="http://www.eawag.ch">
-	     <span property="dct:title">Eawag</span></a>
-	  has waived all copyright to
-	  <span property="dct:title">Eawag DMP Guide</span>. If you use this material, we do ask that you acknowledge the source and link back to this page.
-	</p>
-      {%- endif %}
+{# make logo link redirectable #}
+{%- set theme_logotarget = (theme_logotarget == "<root>" and theme_roottarget or (theme_logotarget == "<toc>" and master_doc or theme_logotarget)) %}
+{%- block sidebarlogo %}
+    {%- if logo %}
+        <p class="logo"><a href="{{ pathto(theme_logotarget) }}" title="{{ theme_logotarget }}">
+          <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+        </a></p>
     {%- endif %}
-    {%- if last_updated %}
-      {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}<br/>
-    {%- endif %}
-    {%- if show_sphinx %}
-      {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx-doc.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}<br/>
-    {%- endif %}
-    </p>
-  </div>
-</footer>
 {%- endblock %}
 
+{# wrap relbars in distinct classes to make themeing easier #}
+{# HVW: top relbar removed #}
+{%- block relbar1 %}
+    {# <div class="relbar-top"> #}
+    {#     {{ super() }} #}
+    {# </div> #}
+{% endblock %}
+
+{%- block relbar2 %}
+    <div class="relbar-bottom">
+        {{ super() }}
+    </div>
+{% endblock %}
+
+{% block extrahead -%}
+        {{ super() }}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {%- if theme_googleanalytics_id -%}
+<script type="text/javascript">
+var ga_enabled = !$.cookie('disable-ga');
+if(ga_enabled){
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{{ theme_googleanalytics_id }}']);
+  _gaq.push(['_setCookiePath', '{{ theme_googleanalytics_path }}']);
+  _gaq.push(['_setDetectFlash', false]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+}
+</script>
+        {%- endif %}
+{%- endblock %}
+
+{% block body -%}
+    {# hack to insert lang=en in scope of div.body #}
+    {% if theme_hyphenation_langage %}
+        <div lang="{{ theme_hyphenation_language }}">{{ super() }}</div>
+    {% endif %}
+{%- endblock %}
+
+{% block sidebar2 -%}
+    {{ super() }}
+    {# insert markup for sidebar toggle button #}
+    {% block sidebartoggle %}
+        <div class="sidebar-toggle-group no-js">
+            {% set right = theme_rightsidebar|tobool %}
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                {% if not right %} «{% endif %}
+                <span class="show-for-small">hide menu</span>
+                {% if right %} »{% endif %}
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                {% if right %} «{% endif %}
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                {% if not right %} »{% endif %}
+            </button>
+        </div>
+    {% endblock %}
+{%- endblock %}
+
+{% block footer -%}
+    {{ super() }}
+    {%- if theme_googleanalytics_id -%}
+<script type="text/javascript">
+    if(ga_enabled){
+        document.write("<div class=\"footer\">This page uses <a href=\"http://analytics.google.com\">Google Analytics</a> to collect statistics. ");
+        document.write("Click <button title=\"set cookie to disable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', 'true', {expires: 3650, path: '{{ theme_googleanalytics_path }}'}); window.location.reload(); return false; \">here</button> to disable analytics for this site.");
+        document.write("</div>");
+    }else{
+        document.write("<div class=\"footer\">Google Analytics has been disabled. ");
+        document.write("Click <button title=\"set cookie to re-enable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', null, {path: '{{ theme_googleanalytics_path }}'}); window.location.reload(); return false; \">here</button> to re-enable analytics for this site.");
+    };
+</script>
+    {%- endif %}
+    <!-- cloud_sptheme 1.4 -->
+{%- endblock %}

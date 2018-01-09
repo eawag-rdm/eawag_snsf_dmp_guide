@@ -3,12 +3,15 @@
 .. role:: strike
     :class: strike
 	       
- 
-Data collection and documentation
-=================================
+=======
+The DMP
+=======
 
-What data will you collect, observe, generate or re-use?
---------------------------------------------------------
+1. Data collection and documentation
+====================================
+
+1.1 What data will you collect, observe, generate or re-use?
+------------------------------------------------------------
 
 .. admonition:: SNSF [#snsf]_
 		
@@ -155,8 +158,8 @@ amount to several hundred MB for the moored and profiled sensor files
 and ~100 GB for the T-microstructure profiles; the EXISTING data in
 category 2 is in the range of ~20 MB.
 
-How will the data be collected, observed or generated?
-------------------------------------------------------
+1.2 How will the data be collected, observed or generated?
+----------------------------------------------------------
 
 .. admonition:: SNSF [#snsf]_
 		
@@ -293,8 +296,8 @@ analysis are stored in the institutional Git repository for version
 control and collaboration.
 
 
-What documentation and metadata will you provide with the data?
----------------------------------------------------------------
+1.3 What documentation and metadata will you provide with the data?
+-------------------------------------------------------------------
 
 .. admonition:: SNSF [#snsf]_
    
@@ -450,13 +453,13 @@ Example for 2. General metadata
     provides search functionality and assigns a persistent URL to each
     dataset.
 
-Ethics, legal and security issues
-=================================
+2. Ethics, legal and security issues
+====================================
 
 .. _section2.1:
 
-How will ethical issues be addressed and handled?
--------------------------------------------------
+2.1 How will ethical issues be addressed and handled?
+-----------------------------------------------------
 
 .. admonition:: SNSF [#snsf]_
 		
