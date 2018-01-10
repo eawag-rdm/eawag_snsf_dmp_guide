@@ -1341,6 +1341,8 @@ Appendix B: Related material
 References
 ==========
 
+.. [Piwowar2013] Piwowar HA, Vision TJ (2013). Data reuse and the open data citation advantage. PeerJ 1:e175 https://doi.org/10.7717/peerj.175
+
 .. [#snsf] Data Management Plan - content of the mySNF form, SNSF, 2017, http://www.snf.ch/SiteCollectionDocuments/DMP_content_mySNF-form_en.pdf
 	   
 .. [#synthetic_chemistry] Example data management plan shared by the

@@ -4,6 +4,11 @@ div.document {
   margin: 0 0;
 }
 
+div.section {
+  background-color: aliceblue;
+  padding: 30px;
+}
+
 div.sphinxsidebar {
   margin-top: 0px;
   background: #005978;
@@ -28,8 +33,21 @@ div.sphinxsidebar h4 {
   color:#F5F205;
 }
 
+button.sidebar-toggle {
+  color: #ffffff;
+}
+
+button#sidebar-show {
+  background-color: #005978;
+}
+
 img.logo {
   max-width: 80%;
+}
+
+p.logo a:hover {
+  filter: invert(100%);
+  background: transparent;
 }
 
 div.admonition-snsf-snsf,

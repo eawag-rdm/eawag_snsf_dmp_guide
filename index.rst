@@ -12,7 +12,7 @@
 Eawag SNSF DMP Guide
 ====================
 
-.. centered:: Version |version| (2018-01-09)
+.. centered:: Version |version| (2018-01-10)
 
 .. sidebar:: Disclaimer
 	     
@@ -28,23 +28,31 @@ Eawag SNSF DMP Guide
         risk.**
 
 
-Instructions for creating a data management plan (DMP) as required by
-the Swiss National Science Foundation (SNSF) as mandatory part of grant
-applications.
+This guide provides instructions for creating a data management plan
+(DMP) as required by the Swiss National Science Foundation (SNSF) as
+mandatory part of grant applications.
 
-The DMP is both, a tool for the SNSF to implement it's `policy on Open
-Research Data
-<http://www.snf.ch/en/theSNSF/research-policies/open_research_data/>`_,
-and a "living document" that prescribes and tracks all facets of data
-management during the research data lifecycle. It should be regarded
-as a project management tool that helps to manage the resource "data"
-just like a project's budget is managed.
+The SNSF requirement for a DMP serves to implement it's `policy on
+Open Research Data
+<http://www.snf.ch/en/theSNSF/research-policies/open_research_data/>`_. Projects
+that create a DMP, follow it and keep it up-to-date will be in an
+excellent position to publish their research data as "Open Data" at
+the end of the project, which is the main goal of SNSF's Open Data
+Policy and can also have a number of advantages for the researchers
+and institutions involved, e.g. a potentially increased citation rate
+[Piwowar2013]_.
 
-Next to ensuring data safety and quality and to help with an overall
-smooth course of the research project, a main motivation for this new
-SNSF requirement is to enable research groups to make their data
-available as Open Data at the end of the project with only little
-effort.
+The other reason to implement a DMP is a better guard against data
+loss, better chances for a maintained high data quality, more effcient
+research organization and a better chance that the reserch project
+stays within schedule.
+
+A DMP should be regarded as a project management tool and exist as a
+"living document" that prescribes and tracks all facets of data
+management during the research data lifecycle. "Data" should be
+seen as a ressource that needs to be managed, just as the
+financial budget or human resources.
+
 
 Please consult `this presentation
 <https://eawag-rdm.github.io/eawag_dmp_2017/index.html>`_ for more

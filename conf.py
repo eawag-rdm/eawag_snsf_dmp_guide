@@ -129,8 +129,9 @@ html_theme_options = {
     'borderless_decor': True,
     'lighter_header_decor': False,
     'rightsidebar': False,
-}
+    'bgcolor': '#005978',
 
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
