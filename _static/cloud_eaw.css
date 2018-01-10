@@ -41,6 +41,10 @@ button#sidebar-show {
   background-color: #005978;
 }
 
+div.sphinxsidebar ul li a {
+  white-space: normal;
+}
+
 img.logo {
   max-width: 80%;
 }
@@ -48,6 +52,10 @@ img.logo {
 p.logo a:hover {
   filter: invert(100%);
   background: transparent;
+}
+
+div.sphinx-toc li.focus.local::before {
+  opacity: 1;
 }
 
 div.admonition-snsf-snsf,
