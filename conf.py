@@ -51,7 +51,6 @@ index_doc = 'index'
 
 # General information about the project.
 project = u'Eawag SNSF DMP Guide'
-copyright = u'{}, Eawag'.format(datetime.datetime.now().year)
 author = u'Harald von Waldow'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -127,11 +126,16 @@ show_sphinx =  False
 html_theme_options = {
     'shaded_decor': False,
     'borderless_decor': True,
-    'lighter_header_decor': False,
+    'lighter_header_decor': True,
     'rightsidebar': False,
     'bgcolor': '#005978',
-
+    'default_layout_text_size': '110%',
 }
+
+# sidebar_quicklinks_title = Quick links
+# sidebar_localtoc_title = Page contents
+# sidebar_prev_title = Previous page
+# sidebar_next_title = Next page
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

@@ -1,11 +1,15 @@
-=================
-Table Of Contents
-=================
+====================
+Eawag SNSF DMP Guide
+====================
 
 .. toctree::
+   :maxdepth: 3
 
-    Front Page <index>
-    Eawag_SNSF_DMP_Guide
+   Intro <index>
+   Guide <Eawag_SNSF_DMP_Guide>
+   Appendix <Appendix>
+   References
+   Copyright
 
 ..
        copyright

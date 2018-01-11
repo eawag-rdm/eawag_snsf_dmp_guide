@@ -6,7 +6,10 @@ div.document {
 
 div.section {
   background-color: aliceblue;
-  padding: 30px;
+}
+
+.body>.section {
+  padding: 10px;
 }
 
 div.sphinxsidebar {
@@ -54,7 +57,8 @@ p.logo a:hover {
   background: transparent;
 }
 
-div.sphinx-toc li.focus.local::before {
+div.sphinx-toc li.focus.local::before,
+div.sphinx-toc li.current.active:not(.focus)::before {
   opacity: 1;
 }
 
@@ -89,4 +93,28 @@ div.example {
   border: 1px solid black;
   border-radius: 10px;
   padding: 0px 10px 0px 10px;
+}
+
+.section .toctree-wrapper a.reference.internal {
+  font-size: 100%;
+}
+
+div.sphinxglobaltoc ul a:not([href*="#"]),
+div.sphinxglobaltoc ul a[href="#"] {
+    font-size: 110%;
+    font-style: italic;
+}
+
+button#sidebar-hide {
+  font-size: 200%;
+}
+
+div.sphinx-toc ul a:not([href^="#"]):hover::before {
+    content: "▶";
+    position: absolute;
+    right: 100%;
+    font-size: 1.5em;
+    margin-right: 0px;
+    color: #fff9e4;
+    opacity: 1;
 }

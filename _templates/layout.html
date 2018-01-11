@@ -52,10 +52,11 @@
     {# </div> #}
 {% endblock %}
 
+{# HVW: bottom relbar removed #}
 {%- block relbar2 %}
-    <div class="relbar-bottom">
-        {{ super() }}
-    </div>
+    <!-- <div class="relbar-bottom"> -->
+    <!--     {{ super() }} -->
+    <!-- </div> -->
 {% endblock %}
 
 {% block extrahead -%}
@@ -108,19 +109,20 @@ if(ga_enabled){
     {% endblock %}
 {%- endblock %}
 
+{# HVW: footer removed #}
 {% block footer -%}
-    {{ super() }}
-    {%- if theme_googleanalytics_id -%}
-<script type="text/javascript">
-    if(ga_enabled){
-        document.write("<div class=\"footer\">This page uses <a href=\"http://analytics.google.com\">Google Analytics</a> to collect statistics. ");
-        document.write("Click <button title=\"set cookie to disable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', 'true', {expires: 3650, path: '{{ theme_googleanalytics_path }}'}); window.location.reload(); return false; \">here</button> to disable analytics for this site.");
-        document.write("</div>");
-    }else{
-        document.write("<div class=\"footer\">Google Analytics has been disabled. ");
-        document.write("Click <button title=\"set cookie to re-enable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', null, {path: '{{ theme_googleanalytics_path }}'}); window.location.reload(); return false; \">here</button> to re-enable analytics for this site.");
-    };
-</script>
-    {%- endif %}
+ <!--    {{ super() }} -->
+<!--     {%- if theme_googleanalytics_id -%} -->
+<!-- <script type="text/javascript"> -->
+<!--     if(ga_enabled){ -->
+<!--         document.write("<div class=\"footer\">This page uses <a href=\"http://analytics.google.com\">Google Analytics</a> to collect statistics. "); -->
+<!--         document.write("Click <button title=\"set cookie to disable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', 'true', {expires: 3650, path: '{{ theme_googleanalytics_path }}'}); window.location.reload(); return false; \">here</button> to disable analytics for this site."); -->
+<!--         document.write("</div>"); -->
+<!--     }else{ -->
+<!--         document.write("<div class=\"footer\">Google Analytics has been disabled. "); -->
+<!--         document.write("Click <button title=\"set cookie to re-enable analytics for this site\" class=\"link\" onclick=\"$.cookie('disable-ga', null, {path: '{{ theme_googleanalytics_path }}'}); window.location.reload(); return false; \">here</button> to re-enable analytics for this site."); -->
+<!--     }; -->
+<!-- </script> -->
+<!--     {%- endif %} -->
     <!-- cloud_sptheme 1.4 -->
 {%- endblock %}

@@ -27,7 +27,6 @@ Eawag SNSF DMP Guide
         **This document was not vetted by the SNSF, use at your own
         risk.**
 
-
 This guide provides instructions for creating a data management plan
 (DMP) as required by the Swiss National Science Foundation (SNSF) as
 mandatory part of grant applications.
@@ -59,12 +58,8 @@ Please consult `this presentation
 information about the new SNSF requirement and data management plans
 in general.
 
-	
-Usage
-=====
-
 Structure
----------
+=========
 
 The structure of the document follows the mySNF form for the data
 management plan.
@@ -84,9 +79,8 @@ Help text by the SNSF is quoted at the beginning of each section in a grey box:
 		
         The SNSF explains how the question is meant.
 
-
 Instructions
-------------
+============
 
 .. container:: example
 
@@ -98,9 +92,8 @@ Instructions contain step-by-step guidance on how to produce a
 good answer to the respective question:
 
 
-
 Examples
---------
+========
 
 .. container:: example
    
