@@ -1,0 +1,121 @@
+@import 'cloud.css';
+
+div.document {
+  margin: 0 0;
+  max-width: 1440px;
+}
+
+div.section {
+  background-color: aliceblue;
+}
+
+.body>.section {
+  padding: 30px;
+}
+
+div.sphinxsidebar {
+  margin-top: 0px;
+  background: #005978;
+  border-radius: 0;
+  
+}
+
+div.sphinxsidebar a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+div.sphinx-toc li.focus.local > a:not(:hover) {
+  color: #FF9955;
+  font-weight: bold;
+}
+ 
+div.sphinxsidebar h3 a,
+div.sphinxsidebar h4 a,
+div.sphinxsidebar h3,
+div.sphinxsidebar h4 {
+  color:#F5F205;
+}
+
+button.sidebar-toggle {
+  color: #ffffff;
+}
+
+button#sidebar-show {
+  background-color: #005978;
+}
+
+div.sphinxsidebar ul li a {
+  white-space: normal;
+}
+
+img.logo {
+  max-width: 80%;
+}
+
+p.logo a:hover {
+  filter: invert(100%);
+  background: transparent;
+}
+
+div.sphinx-toc li.focus.local::before,
+div.sphinx-toc li.current.active:not(.focus)::before {
+  opacity: 1;
+}
+
+div.admonition-snsf-snsf,
+div.admonition-snsf {
+  background: linear-gradient(to bottom,#d4d4d4 0,#b8b8b8 100%);
+  color: black;
+  border-color: #999999;
+}
+
+div.admonition-eawag-standard-snippet {
+  color: #106411;
+  background: #dff0d8;
+  border-color: #d6e9c6;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+div.admonition-snsf.inline-title p.admonition-title,
+div.admonition-eawag-standard-snippet.inline-title p.admonition-title {
+  padding-left: 0px;
+}
+
+
+div.admonition.note {
+  color: #075981;
+}
+
+div.example {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+}
+
+.section .toctree-wrapper a.reference.internal {
+  font-size: 100%;
+}
+
+div.sphinxglobaltoc ul a:not([href*="#"]),
+div.sphinxglobaltoc ul a[href="#"] {
+    font-size: 110%;
+    font-style: italic;
+}
+
+button#sidebar-hide {
+  font-size: 200%;
+}
+
+div.sphinx-toc ul a:not([href^="#"]):hover::before {
+    content: "▶";
+    position: absolute;
+    right: 100%;
+    font-size: 1.5em;
+    margin-right: 0px;
+    color: #fff9e4;
+    opacity: 1;
+}
