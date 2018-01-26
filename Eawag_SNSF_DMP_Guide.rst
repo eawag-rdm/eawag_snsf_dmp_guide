@@ -6,7 +6,10 @@
 .. |br| raw:: html
 
    <br />
-	       
+
+.. |nbsp| unicode:: 0xA0 
+   :trim:
+      
 =====
 Guide
 =====
@@ -138,7 +141,8 @@ e.g. "cervical fluid quality", and one free-text field.
 
 Data will be received in CSV format and has a total volume of about 15 GB.
 
-.. rubric:: Example 4 (from real Eawag DMP)
+Example 4 (from real Eawag DMP)
+...............................
 
 There will be two categories of data: NEW data from this project and
 EXISTING data from the FOEN Lake Monitoring program. The NEW data will
@@ -190,7 +194,8 @@ Instructions
 
 This section actually has two parts, **1. Quality Control** and **2. Organization**.
 
-.. rubric:: 1. Quality assurance
+1. Quality assurance
+....................   
 	    
 For each dataset, mention standards, methodologies and processes that
 serve to ensure that the data meets the expected quality. This
@@ -208,7 +213,8 @@ might for example include:
 * Training activities.
 
     
-.. rubric:: 2. Data Organization
+2. Data Organization
+....................
 
 Briefly describe how the data will be organized. That might be a
 folder-structure together with a file naming convention, a local SQL
@@ -343,7 +349,8 @@ Instructions
 Conceptualize two types of metadata: **1. Scientific metadata** and
 **2.  General metadata**:
 
-.. rubric:: 1. Scientific metadata
+1. Scientific metadata
+......................   
 
 Scientific metadata provides all necessary information to correctly
 understand, interpret, assess, replicate (within limits), build upon,
@@ -393,7 +400,8 @@ observation. Describe technical aspects of the metadata management,
 e.g. the use of database software, and the protocol or mechanism to
 handle updates and version control, if applicable.
 
-.. rubric:: 2. General metadata
+2. General metadata
+...................
 
 This type of metadata serves to make your data findable. It consists
 of general attributes that help to search, sort, index, access and
@@ -407,7 +415,8 @@ the `institutional research data repository
 Examples for 1. Scientific metadata
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. rubric:: Example 1 [DataONE2011]_
+Example 1 [DataONE2011]_
+........................
 
 We will first document our metadata by taking careful notes in the
 laboratory notebook that refer to specific data files and describe all
@@ -422,7 +431,8 @@ using Morpho software, available through KNB
 fully describe the data files and the context of the measurements.
 
 
-.. rubric:: Example 2 [UGLA2015-1]_
+Example 2 [UGLA2015-1]_
+.......................
 
 The data will be accompanied by the following contextual documentation, according to
 standard practice for synthetic methodology projects:
@@ -435,7 +445,8 @@ The final dataset as deposited in the institutional data repository will also be
 accompanied by a README file listing the contents of the other files and outlining the
 file-naming convention used.
 
-.. rubric:: Example 3 (from a real Eawag DMP)
+Example 3 (from a real Eawag DMP)
+.................................
 	    
 For every data stream (sequences of identical data files) over the
 entire 2-year period of data acquisition a README File will be
@@ -636,7 +647,7 @@ will be stored encrypted, please refer to :ref:`Section 2.2
 
 
 Instructions
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 Briefly mention the datasets that require special protection
 (reference :ref:`Section 2.1 <section2.1>`) and use an adverb to
@@ -698,7 +709,8 @@ Examples
     2-factor authentication.
 
 
-.. rubric:: Example 1 [Leeds2013]_
+Example 1 [Leeds2013]_
+......................
 	    
 Access to electronic data is controlled by Active Directory (AD) Group
 membership. The Faculty IT Manager will set up a dedicated folder for
@@ -708,7 +720,8 @@ read-write access. Off-campus access is via the Citrix portal.
 External users who need access to the data will apply for a University
 username and then be assigned to the appropriate AD group.
 
-.. rubric:: Example 2 (modified from [NEH2015]_)
+Example 2 (modified from [NEH2015]_)
+....................................
 
 Research records will be kept confidential, and access will be limited
 to the PI, primary research team members, and project
@@ -718,7 +731,8 @@ identifiable information, or information covered by an NDA, will be
 held in an encrypted format (symmetric, AES256, key on local server,
 passphrase only know to PI and primary research team members).
 
-.. rubric:: Example 3 (from a real Eawag DMP)
+Example 3 (from a real Eawag DMP)
+.................................
 
 The data we are generating, processing and storing in this project
 does not pose a particular data security risk. Day-to-day work is
@@ -810,8 +824,17 @@ Instructions
     \2. Source code
      falls *sui generis* under copyright law and you need to
      explicitly waive the copyright to enable unrestricted
-     re-use. Apply the `CC0 Public Domain Dedication
+     re-use. Apply the `CC0 - Public Domain Dedication
      <https://creativecommons.org/publicdomain/zero/1.0/>`_.
+
+     If you want to have the option to sue people who don't credit you
+     when using your code, apply the `MIT License
+     <https://opensource.org/licenses/MIT>`_.
+
+     If you like to force people who build on your code to open source
+     their changes and improvements as well, apply the `GNU Affero
+     General Public License
+     <https://opensource.org/licenses/AGPL-3.0>`_.
 
      If your code builds on third-party code, check whether the
      respective license restricts your choice of license (e.g., if you
@@ -820,18 +843,22 @@ Instructions
      or not publish it at all). If you have trouble to sort out your
      license-entanglements, get in touch with the `Eawag Research Data
      Management Project \<rdm@eawag.ch\> <rdm@eawag.ch>`_ for help.
-	 
-     \3. Other creative output
-      such as text, images, video also falls *sui generis* under
-      copyright law and you need to explicitly waive the copyright to
-      enable unrestricted re-use. Apply the `CC0 Public Domain
-      Dedication
-      <https://creativecommons.org/publicdomain/zero/1.0/>`_.
+
+    \3. Other creative output
+     such as text, images, video also falls *sui generis* under
+     copyright law and you need to explicitly waive the copyright to
+     enable unrestricted re-use. Apply the `CC0 Public Domain
+     Dedication <https://creativecommons.org/publicdomain/zero/1.0/>`_.
+
+     If you want to have the option to sue people who don't credit you
+     when re-using your work, apply the `Ceative Commons Attribution
+     4.0 International License
+     <https://creativecommons.org/licenses/by/4.0/>`_.
      
-      In case you derived such a work from a pre-existing source, check
-      whether restrictions imposed by the license of the original exist
-      and publish your derivative work under a compatible license, if
-      possible.
+     In case you derived such a work from a pre-existing source, check
+     whether restrictions imposed by the license of the original exist
+     and publish your derivative work under a compatible license, if
+     possible.
 		
 
 Examples
@@ -849,14 +876,16 @@ Examples
     works to be published, or we have established an agreement to that
     effect with our collaborators.
 
-.. rubric:: Example 1
+Example 1
+.........
 	    
 The source code for analysis will most likely utilize the GNU
 Scientific Library (GSL), which is licensed under the GNU General
 Public License (GPL). Therefore we will make our analysis software
 available under the GPL as well.
 
-.. rubric:: Example 2
+Example 2
+.........
 
 Our collaborators at X University in Germany will contribute
 significantly to produce the extensive database of species
@@ -864,7 +893,8 @@ distributions, which, in Germany, falls under copyright law. University
 X would like to retain the copyright on the database and therefore it
 will be published without a license that could facilitate re-use.
 
-.. rubric:: Example 3 (modified from [EPFL2017]_)
+Example 3 (modified from [EPFL2017]_)
+.....................................
 
 This project is being carried out in collaboration with an industrial
 partner. The intellectual property rights are set out in the
@@ -966,7 +996,8 @@ Examples
     are kept for three months. We have arranged to have access to the
     required storage-capacity.
 
-.. rubric:: Example 1
+Example 1
+.........
 
 Data will be downloaded from the dataloggers diurnally to the
 field-laptop, and immediately copied to a flash-drive, which is stored
@@ -977,7 +1008,8 @@ copied to a backed-up server in the Eawag local network. [copy text
 from :ref:`Eawag standard snippet "file services - backup"
 <eawag_file_services>`]
 
-.. rubric:: Example 2
+Example 2
+.........
 
 The simulations will be carried at supercomputing facility X, where
 backup is not available. On the local workstation runs a script that
@@ -987,7 +1019,8 @@ infrastructure (which is mounted on the local workstation). [copy text
 from :ref:`Eawag standard snippet "file services - backup"
 <eawag_file_services>`]
 
-.. rubric:: Example 3
+Example 3
+.........
 
 Our team stores the data to be analyzed along with the results using
 Eawag file services. [copy text from :ref:`Eawag standard snippet
@@ -1017,7 +1050,7 @@ encryption, key-pairs specifically created for this project).
     FAIR Data Principles F2 & R1.3)
 
 Instructions
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 It is Eawag policy to generally preserve *all relevant data* generated
 or used by research projects in the `Eawag Research Data Institutional
@@ -1095,7 +1128,8 @@ Examples
    repositories. Additionally, data flagged in this way will be stored
    in file-formats that minimize the chance for format obsolescence.
 
-.. rubric:: Example 1
+Example 1
+.........
 
 All data from this project will be stored in plain text CSV files
 (UTF-8 encoding, no BOM). Text-files containing graphics and layout
@@ -1247,13 +1281,15 @@ Examples
    be made available to the public in full, latest at the time of
    publication of the project report.
 
-.. rubric:: Example 1
+Example 1
+.........
 	    
 Our data will include meteorological observations obtained from
 MeteoSwiss who prohibit any further distribution of the
 data. Therefore we will have to exclude these data from publication.
 
-.. rubric:: Example 3
+Example 3
+.........
 
 The extensive household survey about water-born diseases poses severe
 challenges with regard to anonymization, since simple pseudonymization
@@ -1266,7 +1302,8 @@ with the associated article. If a sufficiently anonymized dataset
 turns out to still hold scientific value, we will publish it no later
 than one year after completion of the project.
 
-.. rubric:: Example 4
+Example 4
+.........
 
 We expect that the the sampling campaign will yield useful data that
 cannot be completely exploited within the frame of this project. We
