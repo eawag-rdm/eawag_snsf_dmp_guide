@@ -12,7 +12,7 @@
 Eawag SNSF DMP Guide
 ====================
 
-.. centered:: Version |version| (2018-01-10)
+.. centered:: Version |version| (2018-01-29)
 
 .. sidebar:: Disclaimer
 	     
