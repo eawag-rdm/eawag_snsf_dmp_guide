@@ -1,4 +1,5 @@
 @import 'cloud.css';
+@import 'fontstyles.css';
 
 div.document {
   margin: 0 0;
@@ -20,14 +21,18 @@ div.sphinxsidebar {
   
 }
 
+div.sphinxsidebar h3, div.sphinxsidebar h4 {
+  font-family: Open Sans;
+}
+  
 div.sphinxsidebar a {
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 div.sphinx-toc li.focus.local > a:not(:hover) {
   color: #FF9955;
-  font-weight: bold;
+  font-weight: 600;
 }
  
 div.sphinxsidebar h3 a,
@@ -118,4 +123,13 @@ div.sphinx-toc ul a:not([href^="#"]):hover::before {
     margin-right: 0px;
     color: #fff9e4;
     opacity: 1;
+}
+div.body h2, div.body p.rubric, div.body h3, div.body h4, div.body h5, div.body h6 {
+  font-family: "Open Sans", sans;
+  font-weight: 700;
+}
+
+div.body h1 {
+  font-family: "Open Sans", sans;
+  font-weight: 800;
 }

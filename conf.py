@@ -80,7 +80,6 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
-
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -130,7 +129,10 @@ html_theme_options = {
     'rightsidebar': False,
     'bgcolor': '#005978',
     'default_layout_text_size': '110%',
+    'fontcssurl': "FUCKIT",
 }
+
+
 
 # sidebar_quicklinks_title = Quick links
 # sidebar_localtoc_title = Page contents
