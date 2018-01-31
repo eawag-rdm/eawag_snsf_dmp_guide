@@ -129,7 +129,6 @@ html_theme_options = {
     'rightsidebar': False,
     'bgcolor': '#005978',
     'default_layout_text_size': '110%',
-    'fontcssurl': "FUCKIT",
 }
 
 
