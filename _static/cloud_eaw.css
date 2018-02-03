@@ -54,6 +54,10 @@ div.sphinxsidebar ul li a {
   white-space: normal;
 }
 
+div.sphinxsidebar p.logo a {
+  display: inline;
+}
+
 img.logo {
   max-width: 80%;
 }
