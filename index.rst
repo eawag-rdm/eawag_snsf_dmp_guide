@@ -11,9 +11,9 @@
 ====================	  
 Eawag SNSF DMP Guide
 ====================
-
-.. centered:: Version |version| (2018-01-29)
-
+.. sectionauthor:: Harald von Waldow <harald.vonwaldow@eawag.ch>
+.. centered:: Version |version| (2018-01-29) -- `Harald von Waldow <harald.vonwaldow@eawag.ch>`_
+.. centered:: `The Eawag RDM project <https://opendata.eawag.ch>`_
 .. sidebar:: Disclaimer
 	     
     The instructions in this document are provided in the hope that
