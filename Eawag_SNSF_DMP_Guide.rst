@@ -464,8 +464,8 @@ calibration procedure and format. This is a standard procedure which
 we have used in the past.
 
 	       
-Example for 2. General metadata
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Standard snippet for 2. General metadata
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _eawag_standard_eric1:
 
@@ -568,8 +568,9 @@ scheduled deletion of data or training activities. For technical
 implementation details or purely technical measures reference
 :ref:`Section 2.2 <section2.2>`.
 
+Standard snippet
+^^^^^^^^^^^^^^^^
 .. _no_issues:
-
 .. admonition:: Eawag standard snippet "no issues"
    :class: admonition-eawag-standard-snippet
 
@@ -696,6 +697,8 @@ points and recommendations:
     such as Dropbox. `GnuPG <https://gnupg.org/index.html>`_
     is the recommended software for that purpose.
 
+Standard snippet
+^^^^^^^^^^^^^^^^
 .. _eawag_fileservices_access:
 .. admonition:: Eawag standard snippet "Eawag file services - access"
     :class: admonition-eawag-standard-snippet		
@@ -862,7 +865,9 @@ Instructions
      whether restrictions imposed by the license of the original exist
      and publish your derivative work under a compatible license, if
      possible.
-		   
+
+Standard snippet
+^^^^^^^^^^^^^^^^
 .. _eawag_standard_licenses:
 .. admonition:: Eawag standard snippet "default licensing"
     :class: admonition-eawag-standard-snippet		
@@ -980,8 +985,9 @@ a), during data collection / generation, and b), during analysis.
    already covered by :ref:`Eawag standard snippet "file services -
    backup" <eawag_file_services>`.
 
+Standard snippet
+^^^^^^^^^^^^^^^^
 .. _eawag_file_services:
-   
 .. admonition:: Eawag standard snippet "file services - backup"
     :class: admonition-eawag-standard-snippet	
 
@@ -1100,6 +1106,8 @@ that will not be shared should be mentioned in :ref:`Section 4.2
    institutional repository. (see :ref:`Appendix A: File format
    recommendations <file-formats>`).
 
+Standard snippets
+^^^^^^^^^^^^^^^^^
 .. _standard_snippet_repo:
 .. admonition:: Eawag standard snippet "preservation"
    :class: admonition-eawag-standard-snippet
@@ -1173,6 +1181,8 @@ Instructions
 2. Otherwise, you might use the :ref:`Eawag standard snippet "sharing"
    <eawag_snippet_sharing>` below.
 
+Standard snippet
+^^^^^^^^^^^^^^^^
 .. _eawag_snippet_sharing:
 .. admonition:: Eawag standard snippet "sharing"
    :class: admonition-eawag-standard-snippet
@@ -1266,7 +1276,9 @@ accepted** by SNSF, include for example:
 * The intent to base follow-up publications on the data, after the
   project has finished.
 * The intent to couple re-use of the data by other groups to an offer for collaboration.
-  
+
+Standard snippet
+^^^^^^^^^^^^^^^^
 .. _eawag_standard_publishing_ok:
 .. admonition:: Eawag standard snippet "publishing OK"
    :class: admonition-eawag-standard-snippet

@@ -91,6 +91,20 @@ Instructions
 Instructions contain step-by-step guidance on how to produce a
 good answer to the respective question:
 
+Eawag standard snippets
+=======================
+
+.. admonition:: Eawag standard snippets
+         :class: admonition-eawag-standard-snippet
+
+	 Green boxes with text snippets, often Eawag specific.
+
+We expect that those can be used in many cases verbatim, or with
+little modification.
+
+.. warning::
+   
+   **Do not copy & paste blindy!**.
 
 Examples
 ========
@@ -116,18 +130,5 @@ Examples
    Research Data Management Project \<rdm@eawag.ch\> <rdm@eawag.ch>`_
    so that we can improve this document.
 
-Among the Examples are also 
-
-.. admonition:: Eawag standard snippets
-         :class: admonition-eawag-standard-snippet
-
-	 Green boxes with text snippets, often Eawag specific.
-
-We expect that those can be used in many cases verbatim, or with
-little modification.
-
-.. warning::
-
-   **Do not copy & paste blindy!**.
 
    
