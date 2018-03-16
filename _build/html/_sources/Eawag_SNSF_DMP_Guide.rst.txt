@@ -73,6 +73,7 @@ Instructions
    expected at the end of the analysis chain and directly underlie the
    resulting publications.
 
+.. rst-class:: html-toggle
 
 Example snippets
 ^^^^^^^^^^^^^^^^
@@ -226,6 +227,8 @@ Consider how the chosen organization schema supports version-control
 (if necessary), collaboration (if necessary) and is suited for the
 expected data volume and data structure.
 
+.. rst-class:: html-toggle
+	       
 Example snippets
 ^^^^^^^^^^^^^^^^
 
@@ -412,6 +415,9 @@ the `institutional research data repository
 :ref:`Eawag standard snippet "metadata in ERIC"
 <eawag_standard_eric1>`.
 
+
+.. rst-class:: html-toggle
+	       
 Examples for 1. Scientific metadata
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -457,6 +463,7 @@ repairs, and (d) details on the physical units, as well as the
 calibration procedure and format. This is a standard procedure which
 we have used in the past.
 
+	       
 Example for 2. General metadata
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -561,9 +568,6 @@ scheduled deletion of data or training activities. For technical
 implementation details or purely technical measures reference
 :ref:`Section 2.2 <section2.2>`.
 
-Examples
-^^^^^^^^
-
 .. _no_issues:
 
 .. admonition:: Eawag standard snippet "no issues"
@@ -573,7 +577,11 @@ Examples
    collection, processing, storage and dissemination in this
    project. We neither obtain nor generate sensitive data and do not
    sign a confidentiality agreement.
-
+   
+.. rst-class:: html-toggle
+		    
+Examples
+^^^^^^^^
     
 Example 1
 .........
@@ -615,9 +623,6 @@ sensitive data. In all published data, the sampling locations will be
 replaced with numerical codes. The respective correspondence table
 will be stored encrypted, please refer to :ref:`Section 2.2
 <section2.2>` for technical details.
-
-
-
 
 .. _section2.2:
     
@@ -691,12 +696,6 @@ points and recommendations:
     such as Dropbox. `GnuPG <https://gnupg.org/index.html>`_
     is the recommended software for that purpose.
 
-
-
-
-Examples
-^^^^^^^^
-
 .. _eawag_fileservices_access:
 .. admonition:: Eawag standard snippet "Eawag file services - access"
     :class: admonition-eawag-standard-snippet		
@@ -708,6 +707,10 @@ Examples
     establishing a Virtual Private Network (VPN) that is secured by
     2-factor authentication.
 
+.. rst-class:: html-toggle
+
+Examples
+^^^^^^^^
 
 Example 1 [Leeds2013]_
 ......................
@@ -859,13 +862,8 @@ Instructions
      whether restrictions imposed by the license of the original exist
      and publish your derivative work under a compatible license, if
      possible.
-		
-
-Examples
-^^^^^^^^
-
+		   
 .. _eawag_standard_licenses:
-
 .. admonition:: Eawag standard snippet "default licensing"
     :class: admonition-eawag-standard-snippet		
 
@@ -875,6 +873,11 @@ Examples
     unrestricted authority over the dissemination of the data and
     works to be published, or we have established an agreement to that
     effect with our collaborators.
+
+.. rst-class:: html-toggle
+	    
+Examples
+^^^^^^^^
 
 Example 1
 .........
@@ -977,9 +980,6 @@ a), during data collection / generation, and b), during analysis.
    already covered by :ref:`Eawag standard snippet "file services -
    backup" <eawag_file_services>`.
 
-Examples
-^^^^^^^^
-
 .. _eawag_file_services:
    
 .. admonition:: Eawag standard snippet "file services - backup"
@@ -995,6 +995,11 @@ Examples
     taken from the Metrocluster at a third location on the campus. Backups
     are kept for three months. We have arranged to have access to the
     required storage-capacity.
+
+.. rst-class:: html-toggle
+
+Examples
+^^^^^^^^
 
 Example 1
 .........
@@ -1095,12 +1100,7 @@ that will not be shared should be mentioned in :ref:`Section 4.2
    institutional repository. (see :ref:`Appendix A: File format
    recommendations <file-formats>`).
 
-
-Examples
-^^^^^^^^
-
 .. _standard_snippet_repo:
-
 .. admonition:: Eawag standard snippet "preservation"
    :class: admonition-eawag-standard-snippet
 	
@@ -1112,7 +1112,6 @@ Examples
    the study. Data from intermediate steps of the analysis that can be
    re-created from preserved information does not need not to be stored.
 
-	     
 .. _standard_snippet_lts:
 .. admonition:: Eawag standard snippet "long-term storage"
    :class: admonition-eawag-standard-snippet	
@@ -1127,6 +1126,11 @@ Examples
    storage media and redundant storage in third-party
    repositories. Additionally, data flagged in this way will be stored
    in file-formats that minimize the chance for format obsolescence.
+
+.. rst-class:: html-toggle
+	       
+Examples
+^^^^^^^^
 
 Example 1
 .........
@@ -1168,12 +1172,6 @@ Instructions
 
 2. Otherwise, you might use the :ref:`Eawag standard snippet "sharing"
    <eawag_snippet_sharing>` below.
-
-
-
-
-Examples
-^^^^^^^^
 
 .. _eawag_snippet_sharing:
 .. admonition:: Eawag standard snippet "sharing"
@@ -1269,10 +1267,6 @@ accepted** by SNSF, include for example:
   project has finished.
 * The intent to couple re-use of the data by other groups to an offer for collaboration.
   
-
-Examples
-^^^^^^^^
-
 .. _eawag_standard_publishing_ok:
 .. admonition:: Eawag standard snippet "publishing OK"
    :class: admonition-eawag-standard-snippet
@@ -1280,6 +1274,11 @@ Examples
    We expect no limitations with respect to publishing the data. It will
    be made available to the public in full, latest at the time of
    publication of the project report.
+
+.. rst-class:: html-toggle
+	       
+Examples
+^^^^^^^^
 
 Example 1
 .........

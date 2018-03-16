@@ -50,5 +50,6 @@ Appendix B: Related material
 
 * :download:`Data Quality Control and Assurance Tutorial (PDF)<./_static/L05_DataQualityControlAssurance.pdf>`
 * Presentation:  `The SNSF Data Management Plan <https://eawag-rdm.github.io/eawag_dmp_2017/index.html>`_
-* `DLCM Template for the SNSF DMP (PDF) <https://www.dlcm.ch/download_file/force/77/275>`_ 
+* `DLCM Template for the SNSF DMP (PDF) <https://www.dlcm.ch/download_file/force/77/275>`_
+* `Hundreds of public data management plans  <https://dmptool.org/public_plans>`_
 
