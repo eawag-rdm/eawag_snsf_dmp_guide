@@ -5,12 +5,18 @@
 
 .. |br| raw:: html
 
-   <br />
+.. meta::
+   :description: Guide for preparing Data Management Plans compliant
+		 with the requirements of the Swiss National Science Foundation (SNSF / SNF)<br />
+   :keywords: Data Management Plan, Data Management, SNF, SNS,F Swiss
+              National Science Foundation, Guide, Help, Project,
+              Funding, Application
 
+	
+===========================================
+Eawag SNF / SNSF Data Management Plan Guide
+===========================================
 
-====================	  
-Eawag SNSF DMP Guide
-====================
 .. sectionauthor:: Harald von Waldow <harald.vonwaldow@eawag.ch>
 .. centered:: Version |version| (2018-01-29) -- `Harald von Waldow <harald.vonwaldow@eawag.ch>`_
 .. centered:: `The Eawag RDM project <https://opendata.eawag.ch>`_
