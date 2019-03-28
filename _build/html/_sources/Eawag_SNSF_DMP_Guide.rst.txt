@@ -1189,7 +1189,7 @@ Standard snippet
 	   
    The data from this project will be shared through the public facing
    mirror of the Eawag Research Data Institutional Collection, which
-   is expected to go on-line in the first quarter of 2018. This
+   is expected to go on-line in the first quarter of 2019. This
    repository aims at supporting the FAIR Data Principles to the
    extent possible and provides
    
