@@ -1188,10 +1188,10 @@ Standard snippet
    :class: admonition-eawag-standard-snippet
 	   
    The data from this project will be shared through the public facing
-   mirror of the Eawag Research Data Institutional Collection, which
-   is expected to go on-line in the first quarter of 2019. This
-   repository aims at supporting the FAIR Data Principles to the
-   extent possible and provides
+   mirror of the Eawag Research Data Institutional Collection,
+   `ERIC/open <https://opendata.eawag.ch>`_. This repository aims at
+   supporting the FAIR Data Principles to the extent possible and
+   provides
    
    * a persistent identifyer (DOI) for each dataset,
    * a rich set of metadata (compliant with the DataCite Metadata Scheme 4.0),
